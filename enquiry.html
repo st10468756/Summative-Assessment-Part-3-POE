@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Volunteer registration form for Helping Hands Community Centre">
+    <title>Volunteer - Helping Hands Community Centre</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Helping Hands</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="enquiry.html" class="active">Volunteer</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Join Our Volunteer Team</h1>
+            <p>Make a difference in your community by volunteering with Helping Hands</p>
+        </div>
+    </section>
+
+    <!-- Volunteer Info -->
+    <section class="volunteer-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Why Volunteer?</h3>
+                    <p>Our volunteers are the heart of our organization. By joining our team, you'll directly impact lives while gaining valuable experience and building meaningful connections.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Volunteer Opportunities</h3>
+                    <ul>
+                        <li>Food parcel preparation and distribution</li>
+                        <li>Clothing sorting and organization</li>
+                        <li>Shelter support and maintenance</li>
+                        <li>Educational program assistance</li>
+                        <li>Administrative support</li>
+                        <li>Community outreach</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>Requirements</h3>
+                    <ul>
+                        <li>Must be 16 years or older</li>
+                        <li>Complete orientation training</li>
+                        <li>Commit to minimum 4 hours per month</li>
+                        <li>Pass background check (for certain roles)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Form -->
+    <section class="volunteer-form">
+        <div class="container">
+            <h2>Volunteer Application Form</h2>
+            <form id="volunteerForm">
+                <!-- Personal Information -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="3"></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- Availability -->
+                <fieldset>
+                    <legend>Availability</legend>
+                    <div class="form-group">
+                        <label>When are you available to volunteer? *</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="availability" value="weekdays"> Weekdays</label>
+                            <label><input type="checkbox" name="availability" value="weekends"> Weekends</label>
+                            <label><input type="checkbox" name="availability" value="mornings"> Mornings</label>
+                            <label><input type="checkbox" name="availability" value="afternoons"> Afternoons</label>
+                            <label><input type="checkbox" name="availability" value="evenings"> Evenings</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="hours">How many hours per week can you volunteer? *</label>
+                        <select id="hours" name="hours" required>
+                            <option value="">Select hours</option>
+                            <option value="1-4">1-4 hours</option>
+                            <option value="5-10">5-10 hours</option>
+                            <option value="11-20">11-20 hours</option>
+                            <option value="20+">20+ hours</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <!-- Interests -->
+                <fieldset>
+                    <legend>Volunteer Interests</legend>
+                    <div class="form-group">
+                        <label>Which areas interest you most? *</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="interests" value="food"> Food Parcel Distribution</label>
+                            <label><input type="checkbox" name="interests" value="clothing"> Clothing Donations</label>
+                            <label><input type="checkbox" name="interests" value="shelter"> Shelter Support</label>
+                            <label><input type="checkbox" name="interests" value="education"> Education Programs</label>
+                            <label><input type="checkbox" name="interests" value="admin"> Administrative Work</label>
+                            <label><input type="checkbox" name="interests" value="outreach"> Community Outreach</label>
+                            <label><input type="checkbox" name="interests" value="events"> Special Events</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="skills">Special Skills or Experience</label>
+                        <textarea id="skills" name="skills" rows="4" placeholder="Please list any relevant skills, qualifications, or experience..."></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- Emergency Contact -->
+                <fieldset>
+                    <legend>Emergency Contact</legend>
+                    <div class="form-group">
+                        <label for="emergencyName">Emergency Contact Name *</label>
+                        <input type="text" id="emergencyName" name="emergencyName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="emergencyPhone">Emergency Contact Phone *</label>
+                        <input type="tel" id="emergencyPhone" name="emergencyPhone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="emergencyRelation">Relationship *</label>
+                        <input type="text" id="emergencyRelation" name="emergencyRelation" required>
+                    </div>
+                </fieldset>
+
+                <!-- Agreement -->
+                <fieldset>
+                    <legend>Agreement</legend>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="agreement" required>
+                            I understand that this is a volunteer position and I am not entitled to compensation
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="backgroundCheck" required>
+                            I agree to a background check if required for my volunteer role
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="orientation" required>
+                            I agree to attend a volunteer orientation session before starting
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="form-submit">
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                    <button type="reset" class="btn btn-secondary">Reset Form</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Helping Hands Community Centre</h3>
+                    <p>Combatting hunger and homelessness in Johannesburg since 2015.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="enquiry.html">Volunteer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@helpinghands.org.za</p>
+                    <p>Phone: +27 11 123 4567</p>
+                    <p>Johannesburg, South Africa</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Helping Hands Community Centre. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
